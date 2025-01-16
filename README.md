@@ -1,1 +1,1 @@
-# template_prodml
+Template for ML project workflow

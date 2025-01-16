@@ -1,0 +1,154 @@
+2024-12-29 17:46:23.431 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v1
+2024-12-29 17:46:23.431 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v1 exists! -> loading model configuration file!
+2024-12-29 17:47:19.022 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v1
+2024-12-29 17:47:19.022 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v1 was not found -> building rf_db_v1
+2024-12-29 17:47:19.022 | INFO     | code.pipeline.model:build_model:12 - Starting up model building pipeline
+2024-12-29 17:47:19.022 | INFO     | code.pipeline.preparation:prepare_data:8 - Started up data pre-processing pipeline
+2024-12-29 17:47:19.022 | INFO     | code.pipeline.data_collection:load_data_from_db:11 - Extracting the table from database
+2024-12-29 17:48:04.039 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v1
+2024-12-29 17:48:04.039 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v1 was not found -> building rf_db_v1
+2024-12-29 17:48:04.039 | INFO     | code.pipeline.model:build_model:12 - Starting up model building pipeline
+2024-12-29 17:48:04.039 | INFO     | code.pipeline.preparation:prepare_data:8 - Started up data pre-processing pipeline
+2024-12-29 17:48:04.039 | INFO     | code.pipeline.data_collection:load_data_from_db:11 - Extracting the table from database
+2024-12-29 17:48:04.045 | INFO     | code.pipeline.preparation:prepare_data:10 - Data Loaded
+2024-12-29 17:48:04.045 | INFO     | code.pipeline.preparation:encode_cat_columns:17 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2024-12-29 17:48:04.047 | INFO     | code.pipeline.model:get_X_y:34 - Defining X and y variables. 
+X vars: Index(['Price', 'Promotion', 'Weekday', 'Supplier_Cost',
+       'Replenishment_Lead_Time', 'Stock_level', 'Product_Category_Dairy',
+       'Product_Category_Household', 'Product_Category_Personal Care',
+       'Product_Category_Snacks', 'Store_Location_Suburban',
+       'Store_Location_Urban'],
+      dtype='object')
+y var: Sales_Volume
+2024-12-29 17:48:04.047 | INFO     | code.pipeline.model:split_train_test:38 - Splitting the data into train and test sets
+2024-12-29 17:48:04.049 | INFO     | code.pipeline.model:train_model:50 - Training the model with Hyperparameter Tuning
+2024-12-29 17:48:13.946 | INFO     | code.pipeline.model:train_model:60 - Model best score -0.013189258570179363
+2024-12-29 17:48:13.951 | INFO     | code.pipeline.model:evaluate_model:65 - Evaluating the model. Score=-0.02501582466865293
+2024-12-29 17:48:13.951 | INFO     | code.pipeline.model:save_model:69 - Saving a model to directory: code/models/rf_db_v1
+2024-12-29 17:48:13.953 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v1 exists! -> loading model configuration file!
+2024-12-29 17:49:49.659 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v1
+2024-12-29 17:49:49.659 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v1 exists! -> loading model configuration file!
+2024-12-29 17:49:59.695 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2024-12-29 17:49:59.695 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2024-12-29 17:49:59.695 | INFO     | code.pipeline.model:build_model:12 - Starting up model building pipeline
+2024-12-29 17:49:59.695 | INFO     | code.pipeline.preparation:prepare_data:8 - Started up data pre-processing pipeline
+2024-12-29 17:49:59.695 | INFO     | code.pipeline.data_collection:load_data_from_db:11 - Extracting the table from database
+2024-12-29 17:49:59.699 | INFO     | code.pipeline.preparation:prepare_data:10 - Data Loaded
+2024-12-29 17:49:59.700 | INFO     | code.pipeline.preparation:encode_cat_columns:17 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2024-12-29 17:49:59.701 | INFO     | code.pipeline.model:get_X_y:34 - Defining X and y variables. 
+X vars: Index(['Price', 'Promotion', 'Weekday', 'Supplier_Cost',
+       'Replenishment_Lead_Time', 'Stock_level', 'Product_Category_Dairy',
+       'Product_Category_Household', 'Product_Category_Personal Care',
+       'Product_Category_Snacks', 'Store_Location_Suburban',
+       'Store_Location_Urban'],
+      dtype='object')
+y var: Sales_Volume
+2024-12-29 17:49:59.701 | INFO     | code.pipeline.model:split_train_test:38 - Splitting the data into train and test sets
+2024-12-29 17:49:59.702 | INFO     | code.pipeline.model:train_model:50 - Training the model with Hyperparameter Tuning
+2024-12-29 17:50:09.535 | INFO     | code.pipeline.model:train_model:60 - Model best score -0.025293690267367587
+2024-12-29 17:50:09.539 | INFO     | code.pipeline.model:evaluate_model:65 - Evaluating the model. Score=-0.014512972270491087
+2024-12-29 17:50:09.539 | INFO     | code.pipeline.model:save_model:69 - Saving a model to directory: code/models/rf_db_v2
+2024-12-29 17:50:09.540 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-12 13:02:41.685 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 13:02:41.685 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-12 13:02:57.496 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 13:02:57.497 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2025-01-12 13:02:57.497 | INFO     | code.pipeline.model:build_model:17 - Starting up model building pipeline
+2025-01-12 13:02:57.497 | INFO     | code.pipeline.preparation:prepare_data:15 - Started up data pre-processing pipeline
+2025-01-12 13:02:57.497 | INFO     | code.pipeline.data_collection:load_data_from_db:12 - Extracting the table from database
+2025-01-12 13:02:57.505 | INFO     | code.pipeline.preparation:prepare_data:17 - Data Loaded from database
+2025-01-12 13:02:57.505 | INFO     | code.pipeline.preparation:_encode_cat_columns:33 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2025-01-12 13:02:57.508 | INFO     | code.pipeline.model:_get_x_y:43 - Defining X and y variables. 
+X vars: {X.columns}
+y var: {y.name}
+2025-01-12 13:02:57.508 | INFO     | code.pipeline.model:_split_train_test:59 - Splitting the data into train and test sets
+2025-01-12 13:02:57.510 | INFO     | code.pipeline.model:_train_model:103 - Training the model with Hyperparameter Tuning
+2025-01-12 13:03:07.088 | INFO     | code.pipeline.model:_train_model:117 - Model best score {grid.best_score_}
+2025-01-12 13:03:07.090 | INFO     | code.pipeline.model:_evaluate_model:125 - Evaluating the model. Score={model_score}
+2025-01-12 13:03:20.569 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 13:03:20.569 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2025-01-12 13:03:20.569 | INFO     | code.pipeline.model:build_model:17 - Starting up model building pipeline
+2025-01-12 13:03:20.569 | INFO     | code.pipeline.preparation:prepare_data:15 - Started up data pre-processing pipeline
+2025-01-12 13:03:20.569 | INFO     | code.pipeline.data_collection:load_data_from_db:12 - Extracting the table from database
+2025-01-12 13:03:20.572 | INFO     | code.pipeline.preparation:prepare_data:17 - Data Loaded from database
+2025-01-12 13:03:20.572 | INFO     | code.pipeline.preparation:_encode_cat_columns:33 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2025-01-12 13:03:20.573 | INFO     | code.pipeline.model:_get_x_y:43 - Defining X and y variables. 
+X vars: {X.columns}
+y var: {y.name}
+2025-01-12 13:03:20.573 | INFO     | code.pipeline.model:_split_train_test:59 - Splitting the data into train and test sets
+2025-01-12 13:03:20.574 | INFO     | code.pipeline.model:_train_model:103 - Training the model with Hyperparameter Tuning
+2025-01-12 13:03:30.299 | INFO     | code.pipeline.model:_train_model:117 - Model best score {grid.best_score_}
+2025-01-12 13:03:30.303 | INFO     | code.pipeline.model:_evaluate_model:125 - Evaluating the model. Score={model_score}
+2025-01-12 13:03:30.303 | INFO     | code.pipeline.model:_save_model:130 - Saving a model to directory: code/models/rf_db_v2
+2025-01-12 13:03:30.305 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-12 19:42:59.821 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 19:42:59.821 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-12 19:43:16.762 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 19:43:16.762 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2025-01-12 19:43:16.762 | INFO     | code.pipeline.model:build_model:19 - Starting up model building pipeline
+2025-01-12 19:43:16.762 | INFO     | code.pipeline.preparation:prepare_data:15 - Started up data pre-processing pipeline
+2025-01-12 19:43:16.762 | INFO     | code.pipeline.data_collection:load_data_from_db:12 - Extracting the table from database
+2025-01-12 19:43:16.771 | INFO     | code.pipeline.preparation:prepare_data:17 - Data Loaded from database
+2025-01-12 19:43:16.771 | INFO     | code.pipeline.preparation:_encode_cat_columns:33 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2025-01-12 19:43:16.773 | INFO     | code.pipeline.model:_get_x_y:46 - Defining X and y variables. 
+X vars: {X.columns}
+y var: {y.name}
+2025-01-12 19:43:16.773 | INFO     | code.pipeline.model:_split_train_test:65 - Splitting the data into train and test sets
+2025-01-12 19:43:16.775 | INFO     | code.pipeline.model:_train_model:115 - Training the model with Hyperparameter Tuning
+2025-01-12 19:43:26.371 | INFO     | code.pipeline.model:_train_model:132 - Model best score {grid.best_score_}
+2025-01-12 19:43:26.373 | INFO     | code.pipeline.model:_evaluate_model:153 - Evaluating the model. Score={model_score}
+2025-01-12 19:43:26.373 | INFO     | code.pipeline.model:_save_model:165 - Saving a model to directory: code/models/rf_db_v2
+2025-01-12 19:43:26.374 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-12 19:44:22.808 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 19:44:22.808 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2025-01-12 19:44:22.808 | INFO     | code.pipeline.model:build_model:19 - Starting up model building pipeline
+2025-01-12 19:44:22.808 | INFO     | code.pipeline.preparation:prepare_data:15 - Started up data pre-processing pipeline
+2025-01-12 19:44:22.808 | INFO     | code.pipeline.data_collection:load_data_from_db:12 - Extracting the table from database
+2025-01-12 19:44:22.811 | INFO     | code.pipeline.preparation:prepare_data:17 - Data Loaded from database
+2025-01-12 19:44:22.811 | INFO     | code.pipeline.preparation:_encode_cat_columns:33 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2025-01-12 19:44:34.654 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 19:44:34.654 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2025-01-12 19:44:34.654 | INFO     | code.pipeline.model:build_model:19 - Starting up model building pipeline
+2025-01-12 19:44:34.654 | INFO     | code.pipeline.preparation:prepare_data:15 - Started up data pre-processing pipeline
+2025-01-12 19:44:34.654 | INFO     | code.pipeline.data_collection:load_data_from_db:12 - Extracting the table from database
+2025-01-12 19:44:34.657 | INFO     | code.pipeline.preparation:prepare_data:17 - Data Loaded from database
+2025-01-12 19:44:34.658 | INFO     | code.pipeline.preparation:_encode_cat_columns:33 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2025-01-12 19:44:34.658 | INFO     | code.pipeline.model:_get_x_y:46 - Defining X and y variables. 
+X vars: Index(['Price', 'Promotion', 'Weekday', 'Supplier_Cost',
+       'Replenishment_Lead_Time', 'Stock_level', 'Product_Category_Dairy',
+       'Product_Category_Household', 'Product_Category_Personal Care',
+       'Product_Category_Snacks', 'Store_Location_Suburban',
+       'Store_Location_Urban'],
+      dtype='object')
+y var: {y.name}
+2025-01-12 19:44:34.659 | INFO     | code.pipeline.model:_split_train_test:65 - Splitting the data into train and test sets
+2025-01-12 19:44:34.660 | INFO     | code.pipeline.model:_train_model:115 - Training the model with Hyperparameter Tuning
+2025-01-12 19:44:44.360 | INFO     | code.pipeline.model:_train_model:132 - Model best score {grid.best_score_}
+2025-01-12 19:44:44.364 | INFO     | code.pipeline.model:_evaluate_model:153 - Evaluating the model. Score={model_score}
+2025-01-12 19:44:44.364 | INFO     | code.pipeline.model:_save_model:165 - Saving a model to directory: code/models/rf_db_v2
+2025-01-12 19:44:44.365 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-12 19:45:11.942 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-12 19:45:11.942 | WARNING  | __main__:load_model:18 - Model at code/models/rf_db_v2 was not found -> building rf_db_v2
+2025-01-12 19:45:11.942 | INFO     | code.pipeline.model:build_model:19 - Starting up model building pipeline
+2025-01-12 19:45:11.942 | INFO     | code.pipeline.preparation:prepare_data:15 - Started up data pre-processing pipeline
+2025-01-12 19:45:11.942 | INFO     | code.pipeline.data_collection:load_data_from_db:12 - Extracting the table from database
+2025-01-12 19:45:11.945 | INFO     | code.pipeline.preparation:prepare_data:17 - Data Loaded from database
+2025-01-12 19:45:11.945 | INFO     | code.pipeline.preparation:_encode_cat_columns:33 - Encoding categorical columns ['Product_Category', 'Store_Location']
+2025-01-12 19:45:11.946 | INFO     | code.pipeline.model:_get_x_y:46 - Defining X and y variables. 
+X vars: Index(['Price', 'Promotion', 'Weekday', 'Supplier_Cost',
+       'Replenishment_Lead_Time', 'Stock_level', 'Product_Category_Dairy',
+       'Product_Category_Household', 'Product_Category_Personal Care',
+       'Product_Category_Snacks', 'Store_Location_Suburban',
+       'Store_Location_Urban'],
+      dtype='object')
+y var: Sales_Volume
+2025-01-12 19:45:11.946 | INFO     | code.pipeline.model:_split_train_test:65 - Splitting the data into train and test sets
+2025-01-12 19:45:11.948 | INFO     | code.pipeline.model:_train_model:115 - Training the model with Hyperparameter Tuning
+2025-01-12 19:45:21.527 | INFO     | code.pipeline.model:_train_model:132 - Model best score {grid.best_score_}
+2025-01-12 19:45:21.530 | INFO     | code.pipeline.model:_evaluate_model:153 - Evaluating the model. Score={model_score}
+2025-01-12 19:45:21.530 | INFO     | code.pipeline.model:_save_model:165 - Saving a model to directory: code/models/rf_db_v2
+2025-01-12 19:45:21.530 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-15 20:12:28.150 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-15 20:12:28.150 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!
+2025-01-15 20:13:11.263 | INFO     | __main__:load_model:14 - Checking the existence of model config file at code/models/rf_db_v2
+2025-01-15 20:13:11.263 | INFO     | __main__:load_model:20 - Model code/models/rf_db_v2 exists! -> loading model configuration file!

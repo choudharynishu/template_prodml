@@ -17,5 +17,6 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-logger.add(settings.log_filename, level=settings.log_level,  )
+logger.add(settings.log_filename,
+           level=settings.log_level,)
 engine = create_engine(settings.db_conn_str)

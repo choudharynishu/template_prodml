@@ -29,7 +29,7 @@ jobs:
           export PATH=$HOME/.local/bin:$PATH
 
       - name: install dependencies
-        uses: poetry run make install
+        run: poetry run make install
 
       - name: lint with flake8
-        uses: poetry run make check
+        run: poetry run make check

@@ -1,0 +1,35 @@
+name: MLProject Workflow
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+
+permissions:
+  contents: read
+
+jobs:
+  jobs1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: setup poetry
+        run: | 
+          curl -sSL https://install.python-poetry.org | python3 -
+          export PATH=$HOME/.local/bin:$PATH
+
+      - name: install dependencies
+        uses: poetry run make install
+
+      - name: lint with flake8
+        uses: poetry run make check

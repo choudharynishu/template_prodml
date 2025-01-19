@@ -24,9 +24,7 @@ jobs:
           python-version: '3.12'
 
       - name: setup poetry
-        run: |
-          curl -sSL https://install.python-poetry.org | python3 -
-          export PATH=$HOME/.local/bin:$PATH
+        uses: snok/install-poetry@v1
 
       - name: install dependencies
         run: poetry run make install

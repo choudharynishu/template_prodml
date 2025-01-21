@@ -1,0 +1,25 @@
+name: Lint Workflow
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Application
+        uses: choudharynishu/.github/actions/build-application@v1
+
+      - name: lint with flake8
+        run: poetry run make check
